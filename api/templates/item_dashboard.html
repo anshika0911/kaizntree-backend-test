@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'item_dashboard.css' %}">
+    <script src="{% static 'item_dashboard.js' %}"></script>
+</head>
+<body>
+    <div class='dashboard'>
+        <div class="dashboard-nav">
+            
+            <nav class="dashboard-nav-list">
+                <a href="#" class="dashboard-nav-item"><i class="fas fa-home"></i>
+                    Home </a>
+                <a href="#" class="dashboard-nav-item active"><i class="fas fa-home"></i>
+                Items </a>
+                <a
+                    href="#" class="dashboard-nav-item "><i class="fas fa-tachometer-alt"></i> Stock
+            </a>
+            <a
+                    href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Build </a>
+                    <a
+                    href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Customer </a> <a
+                    href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Sales Order </a> <a
+                    href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Suppliers </a> <a
+                    href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Manufactures </a> <a
+                    href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Purchase Reports </a>
+                    <a
+                    href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Reports </a>
+                    <div class="nav-item-divider"></div>
+                <a href="#" class="dashboard-nav-item"><i class="fas fa-cogs"></i> Help </a><a
+                        href="#" class="dashboard-nav-item"><i class="fas fa-user"></i> Integration </a>
+              
+              <a
+                        href="#" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
+            </nav>
+            <a
+                        href="#" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> My Profile </a>
+            </nav>
+        </div>
+        <div class='dashboard-app'>
+            <h1><b>Item Dashboard</b></h1>
+                            <p>All Items</p>
+            <div class='dashboard-content'>
+                <button class="button-3" role="button" onclick="redirectToCategoryPage()">NEW ITEM CATEGORY</button>
+               
+                <button class="button-3" role="button" onclick="redirectToItemPage()">NEW ITEM</button>
+                <br><br>
+                <div class='container'>
+                    <div id="item-list"></div>
+                    </div>
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>SKU</th>
+                                <th>NAME</th>
+                                <th>IN STOCK</th>
+                                <th> AVAILABLE STOCK</th>
+                                <th>CATEGORY</th>
+                                <th>STOCK STATUS</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Table body will be populated dynamically using JavaScript -->
+                        </tbody>
+                    </table>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>>
+
+
+
+
+
